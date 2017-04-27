@@ -71,9 +71,7 @@ public class MainActivity extends MvpActivity<MainView, MainPresenter> implement
     @Override
     public void onMapReady(final GoogleMap googleMap) {
         googleMap.moveCamera(CameraUpdateFactory.newLatLngBounds(
-                mapLatLngBounds,
-                MapsUtil.calculateWidth(getWindowManager()),
-                MapsUtil.calculateHeight(getWindowManager(), getResources().getDimensionPixelSize(R.dimen.map_margin_bottom)), 150));
+                mapLatLngBounds, MapsUtil.calculateWidth(getWindowManager()), MapsUtil.calculateHeight(getWindowManager(), getResources().getDimensionPixelSize(R.dimen.map_margin_bottom)), 150));
         googleMap.setOnMapLoadedCallback(() -> googleMap.snapshot(presenter::saveBitmap));
     }
 

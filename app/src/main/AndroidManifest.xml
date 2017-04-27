@@ -14,7 +14,7 @@
         android:name=".common.WorkcationApp">
 
         <uses-library android:name="com.google.android.maps" />
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBdnGCVMWokypaPplS8axxs-fFD1K9W-Oc"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyD6Oj_YU9Zeshz-2PvAc3kjwH31m7v0bXI"/>
 
         <activity
             android:name=".screens.main.MainActivity"

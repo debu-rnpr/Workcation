@@ -47,7 +47,7 @@ public class DetailsFragment extends MvpFragment<DetailsFragmentView, DetailsFra
         DetailsFragment fragment = new DetailsFragment();
         ScaleDownImageTransition transition = new ScaleDownImageTransition(ctx, MapBitmapCache.instance().getBitmap());
         transition.addTarget(ctx.getString(R.string.mapPlaceholderTransition));
-        transition.setDuration(600);
+        transition.setDuration(3000);
         fragment.setEnterTransition(transition);
         return fragment;
     }
